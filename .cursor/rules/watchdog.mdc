@@ -4,6 +4,6 @@ globs: ["**/watchdog/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/watchdog.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/watchdog.prompt`
 
 Fonction : watchdog.prompt — Surveillance intelligente du projet

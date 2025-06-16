@@ -4,6 +4,6 @@ globs: ["**/testgen/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/testgen.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/testgen.prompt`
 
 Fonction : Règle automatique pour testgen

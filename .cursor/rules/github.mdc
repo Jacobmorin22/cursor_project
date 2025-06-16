@@ -4,6 +4,6 @@ globs: ["**/github/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/github.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/github.prompt`
 
 Fonction : Règle automatique pour github

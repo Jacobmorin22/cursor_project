@@ -4,6 +4,6 @@ globs: ["**/report/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/report.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/report.prompt`
 
 Fonction : report.prompt — Synthèse d’état du projet

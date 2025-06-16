@@ -4,6 +4,6 @@ globs: ["**/*.py"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/optimize.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/optimize.prompt`
 
 Fonction : Règle automatique pour optimize

@@ -4,6 +4,6 @@ globs: ["**/*"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/default.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/default.prompt`
 
 Fonction : Règle automatique pour default

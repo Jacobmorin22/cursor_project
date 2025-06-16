@@ -4,6 +4,6 @@ globs: ["**/containers/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/containers.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/containers.prompt`
 
 Fonction : Règle automatique pour containers

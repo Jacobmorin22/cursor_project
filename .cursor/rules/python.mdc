@@ -4,6 +4,6 @@ globs: ["**/*.py"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/python.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/python.prompt`
 
 Fonction : Règle automatique pour python

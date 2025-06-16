@@ -4,6 +4,6 @@ globs: ["**/plan/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/plan.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/plan.prompt`
 
 Fonction : plan.prompt — Orchestrateur de phases piloté par TODO.md + state.json

@@ -4,6 +4,6 @@ globs: ["**/analyze/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/analyze.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/analyze.prompt`
 
 Fonction : Règle automatique pour analyze

@@ -4,6 +4,6 @@ globs: ["**/docgen/**"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/docgen.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/docgen.prompt`
 
 Fonction : Règle automatique pour docgen

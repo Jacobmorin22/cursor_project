@@ -4,6 +4,6 @@ globs: ["**/*.md"]
 alwaysApply: false
 ---
 
-Ce fichier règle applique automatiquement le prompt : `./prompts/md.prompt`
+Ce fichier règle applique automatiquement le prompt : `.cursor/prompts/md.prompt`
 
 Fonction : Règle automatique pour md
