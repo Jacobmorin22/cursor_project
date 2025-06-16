@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour debug
+globs: ["**/debug/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/debug.prompt`
+
+Fonction : Règle automatique pour debug

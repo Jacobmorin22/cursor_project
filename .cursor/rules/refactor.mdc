@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour refactor
+globs: ["**/*.py"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/refactor.prompt`
+
+Fonction : Règle automatique pour refactor

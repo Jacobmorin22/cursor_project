@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour default
+globs: ["**/*"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/default.prompt`
+
+Fonction : Règle automatique pour default

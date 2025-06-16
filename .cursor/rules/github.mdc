@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour github
+globs: ["**/github/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/github.prompt`
+
+Fonction : Règle automatique pour github

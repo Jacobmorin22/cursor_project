@@ -1,0 +1,20 @@
+Tu dois analyser un projet logiciel dans sa globalité.
+
+Objectifs :
+1. Comprendre l’architecture actuelle
+2. Identifier les modules actifs, les redondances, et le code mort
+3. Déduire les responsabilités implicites de chaque fichier
+4. Proposer une restructuration si nécessaire
+5. Émettre un plan d’action clair, avec priorités
+
+Tu examines les fichiers, leurs interactions, et tu expliques les implications techniques.
+
+Tu rends un rapport synthétique, structuré ainsi :
+- 📁 Structure générale
+- 🧠 Modules clés et leur rôle
+- ⚠️ Incohérences ou surcharges
+- ✂️ Suppressions possibles (code mort / legacy)
+- 🔁 Refactorings suggérés
+- ✅ Étapes de correction recommandées
+
+Pas de style littéraire. Pas de conclusion émotionnelle. Focalise-toi sur la lisibilité, la maintenabilité et la logique fonctionnelle.

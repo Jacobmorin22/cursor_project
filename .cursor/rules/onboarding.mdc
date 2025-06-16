@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour onboarding
+globs: ["**/onboarding/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/onboarding.prompt`
+
+Fonction : Règle automatique pour onboarding

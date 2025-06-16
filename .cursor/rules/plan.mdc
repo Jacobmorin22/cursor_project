@@ -1,0 +1,9 @@
+---
+description: plan.prompt — Orchestrateur de phases piloté par TODO.md + state.json
+globs: ["**/plan/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/plan.prompt`
+
+Fonction : plan.prompt — Orchestrateur de phases piloté par TODO.md + state.json

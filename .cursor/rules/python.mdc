@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour python
+globs: ["**/*.py"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/python.prompt`
+
+Fonction : Règle automatique pour python

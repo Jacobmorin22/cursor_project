@@ -1,0 +1,37 @@
+{
+    "debug-print": {
+      "prefix": "dbg",
+      "body": [
+        "print(f\"[DEBUG] {${1:var}=}\")"
+      ],
+      "description": "Affichage rapide de variable pour debug"
+    },
+    "pytest-sample": {
+      "prefix": "tst",
+      "body": [
+        "def test_${1:fonction}():",
+        "    assert ${2:appel_fonction} == ${3:valeur_attendue}"
+      ],
+      "description": "Test unitaire simple avec pytest"
+    },
+    "main-check": {
+      "prefix": "main",
+      "body": [
+        "if __name__ == \"__main__\":",
+        "    ${1:main}()"
+      ],
+      "description": "Bloc de lancement standard Python"
+    },
+    "cli-argparse": {
+      "prefix": "cli",
+      "body": [
+        "import argparse",
+        "",
+        "parser = argparse.ArgumentParser(description=\"${1:Description}\")",
+        "parser.add_argument(\"${2:argument}\", help=\"${3:Aide}\")",
+        "args = parser.parse_args()"
+      ],
+      "description": "Structure de base pour interface CLI Python"
+    }
+  }
+  

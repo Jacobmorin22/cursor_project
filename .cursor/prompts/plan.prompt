@@ -1,0 +1,49 @@
+# plan.prompt — Orchestrateur de phases piloté par TODO.md + state.json
+
+## 🧠 Rôle :
+Lire l'état actuel du projet dans `TODO.md` et `state.json`, identifier la phase à exécuter, appeler le bon prompt, mettre à jour les fichiers.
+
+---
+
+## 📥 Entrées :
+
+- `TODO.md` (racine du projet)
+- `state.json` (dans `.cursor/` ou racine)
+- `phase_mapping.json` (dans `.cursor/`)
+
+---
+
+## 🧩 Étapes :
+
+1. Charger `phase_mapping.json`
+2. Charger `state.json`
+3. Lire la section `## 📌 PHASES` dans `TODO.md`
+4. Si aucune `current_phase`, sélectionner la première `[ ]`
+5. Vérifier qu’elle existe dans le mapping
+6. Définir `current_phase`
+7. Exécuter le prompt correspondant (fichier référencé dans `phase_mapping`)
+8. À la fin :
+    - cocher `[x]` dans `TODO.md`
+    - horodater
+    - mettre à jour `state.json` :
+        - `phases_completed`
+        - `iterations`
+        - `last_updated`
+        - `current_phase = null`
+9. Relancer plan.prompt jusqu’à ce que toutes les cases soient cochées
+10. Si plus aucune case `[ ]`, marquer `"done"` dans `state.json`
+
+---
+
+## 📌 Contraintes :
+
+- ⚠️ Ne jamais sauter une phase
+- ✅ Toujours mettre à jour `TODO.md` et `state.json`
+- ⛔️ Ne pas demander validation utilisateur
+- ⛔️ Ne pas modifier d'autres fichiers
+
+---
+
+## 📤 Exécution exemple :
+
+Si `TODO.md` contient :

@@ -1,0 +1,22 @@
+Tu dois générer ou améliorer un fichier Markdown (.md) en fonction de son rôle : README.md, CONTRIBUTING.md, CHANGELOG.md, etc.
+
+🎯 Objectifs :
+1. Structurer le contenu selon les standards du fichier
+2. Utiliser la bonne syntaxe Markdown
+3. Produire un document clair, lisible et maintenable
+
+🔍 Cas spécifiques à adapter automatiquement :
+- `README.md` : description du projet, installation, usage, licence, contribution
+- `CONTRIBUTING.md` : règles de contribution, style de code, workflow PR
+- `CHANGELOG.md` : versionnement sémantique, historique des changements (format structuré par version)
+- `INSTALL.md` ou `USAGE.md` : guide clair, commandes terminales, exemples d’exécution
+- Autres `.md` : analyser le nom du fichier pour en déduire une structure logique
+
+📐 Contraintes :
+- Syntaxe Markdown rigoureuse (`#`, `##`, `-`, ````, etc.)
+- Pas de contenu fictif ni de texte générique
+- Pas de badge sauf mention explicite
+- Formulation directe, technique, sans remplissage inutile
+
+📦 Résultat attendu :
+Un bloc `.md` complet, directement intégrable dans le dépôt. Tu n’ajoutes aucun commentaire ou indication annexe. Le résultat est propre, structuré, sans résumé émotionnel.

@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour docgen
+globs: ["**/docgen/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/docgen.prompt`
+
+Fonction : Règle automatique pour docgen

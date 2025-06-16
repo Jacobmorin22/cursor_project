@@ -1,0 +1,9 @@
+---
+description: watchdog.prompt — Surveillance intelligente du projet
+globs: ["**/watchdog/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/watchdog.prompt`
+
+Fonction : watchdog.prompt — Surveillance intelligente du projet

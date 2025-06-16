@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour deadcode
+globs: ["**/deadcode/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/deadcode.prompt`
+
+Fonction : Règle automatique pour deadcode

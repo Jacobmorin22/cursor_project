@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour analyze
+globs: ["**/analyze/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/analyze.prompt`
+
+Fonction : Règle automatique pour analyze

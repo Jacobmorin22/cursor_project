@@ -1,0 +1,14 @@
+Tu dois détecter le code mort, redondant ou inutilisé dans ce fichier ou projet.
+
+Objectifs :
+1. Identifier les blocs jamais appelés ou importés
+2. Repérer les doublons ou fonctions obsolètes
+3. Proposer des suppressions ou nettoyages sûrs
+
+Structure attendue :
+- 🧠 Critères de détection utilisés
+- 🗑 Liste précise des éléments candidats à suppression
+- 🚧 Éléments à vérifier manuellement
+- ✅ Suggestions de refactoring post-nettoyage (facultatif)
+
+Tu ne proposes de suppression que si le bloc est clairement non utilisé. En cas de doute, tu isoles l’élément pour validation manuelle.

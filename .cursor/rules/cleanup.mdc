@@ -1,0 +1,9 @@
+---
+description: cleanup.prompt — Nettoyage intelligent du projet
+globs: ["**/cleanup/**"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/cleanup.prompt`
+
+Fonction : cleanup.prompt — Nettoyage intelligent du projet

@@ -1,0 +1,40 @@
+# cleanup.prompt — Nettoyage intelligent du projet
+
+## 🎯 Objectif :
+Supprimer les fichiers inutiles, temporaires, vides ou obsolètes, tout en respectant l’intégrité du code.
+
+---
+
+## 📥 Entrées :
+- `TODO.md` (pour vérifier que la phase est prévue)
+- `.cursor/state.json` (pour journaliser)
+- Arborescence du projet
+
+---
+
+## 🔧 Suppressions à effectuer :
+- `__pycache__/`, `.pytest_cache/` → supprimer complètement
+- Fichiers : `*.log`, `*.tmp`, `*.bak`, `*.swp` → supprimer sauf `logs/` actifs
+- Dossiers : `old/`, `unused/`, `tests/_scratch/` → supprimer s’ils ne sont pas référencés dans TODO.md
+- Fichiers vides sauf `__init__.py`
+- Écrire les suppressions dans `logs/cleanup.log`
+
+---
+
+## 📤 À faire après nettoyage :
+- Ajouter une ligne cochée dans `TODO.md` : `[x] Nettoyage (2025-06-16 HH:MM)`
+- Ajouter l’entrée dans `.cursor/state.json` :
+  - Ajouter `"Nettoyage"` à `phases_completed`
+  - Incrémenter `iterations.Nettoyage`
+  - Mettre à jour `last_updated`
+
+---
+
+## ⚠️ Contraintes :
+- Ne jamais supprimer `src/`, `tests/`, `docs/` sauf dossiers temporaires identifiés
+- Toujours logger chaque action
+- Aucun prompt manuel ou confirmation demandée
+
+---
+
+## ✅ Ce prompt est déclenché par plan.prompt

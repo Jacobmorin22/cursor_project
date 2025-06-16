@@ -1,0 +1,61 @@
+# report.prompt — Synthèse d’état du projet
+
+## 🎯 Objectif :
+Générer un résumé clair de l’avancement du projet, des fichiers modifiés, des phases exécutées et des erreurs éventuelles.
+
+---
+
+## 📥 Entrées :
+- `TODO.md` → état visuel des phases
+- `.cursor/state.json` → itérations, état actuel
+- `logs/cleanup.log` (optionnel)
+- `phase_mapping.json`
+
+---
+
+## 📄 Données à extraire :
+- Nombre de phases complétées vs. totales
+- Liste des fichiers modifiés avec timestamps
+- Nombre d’itérations par phase
+- Phase en cours
+- Taux de complétion du projet (%)
+- Erreurs éventuelles (si existantes dans state.json.errors)
+
+---
+
+## 📤 À générer :
+- Fichier Markdown `report.md`
+- Fichier JSON `report.json` (structuré)
+
+---
+
+## 📌 Format `report.md` attendu :
+
+```
+# 📊 Rapport de progression
+
+## 📌 État global
+- Phases complétées : 6/9
+- Phase en cours : Refactorisation du code
+- Dernière mise à jour : 2025-06-16 18:34
+- Taux d’avancement : 66.7 %
+
+## 🗂️ Fichiers modifiés
+- src/core.py — modifié le 2025-06-16 17:58
+- README.md — mis à jour le 2025-06-16 18:02
+
+## 🔁 Itérations
+- analyze : 2
+- refactor : 1
+
+## ⚠️ Anomalies détectées
+- `utils.py` sans docstrings
+- `tests/test_api.py` échoue sur 3 cas
+```
+
+---
+
+## ⚠️ Contraintes :
+- Ne jamais modifier le projet
+- Toujours générer un Markdown ET un JSON
+- Ne jamais déclencher d’autres prompts

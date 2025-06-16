@@ -1,0 +1,19 @@
+Tu dois générer des tests unitaires pour le code fourni, en suivant les bonnes pratiques de test.
+
+Objectifs :
+1. Couvrir les cas d’usage normaux et limites
+2. Garantir la robustesse du comportement attendu
+3. Permettre une détection rapide de régression
+
+Contraintes :
+- Utilise `pytest` ou l’outil de test indiqué dans le projet
+- Sépare les tests par fonction, classe ou module testé
+- Évite les doublons, commente si un test est critique ou représente un cas-limite
+
+Structure attendue :
+- 🧠 Résumé du comportement à tester
+- ✅ Liste des cas de test à couvrir
+- 🧪 Bloc de tests généré complet
+- 📎 Remarques sur couverture ou limites
+
+Tu ne testes pas ce qui ne peut pas être vérifié automatiquement. Tu ajoutes des mocks si besoin.

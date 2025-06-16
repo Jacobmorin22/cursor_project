@@ -1,0 +1,16 @@
+Tu dois refactorer le code fourni sans en altérer le comportement fonctionnel.
+
+Objectifs prioritaires :
+1. Simplification logique (éviter duplication, simplifier conditions)
+2. Lisibilité (meilleure indentation, noms explicites)
+3. Modularisation (fonctions plus courtes, découpage en sous-fonctions/modules)
+4. Conformité aux standards de style (PEP8, conventions locales)
+
+Structure attendue :
+- 🧠 Objectif du refactoring (quel gain visé)
+- 🔍 Analyse des problèmes détectés
+- 🛠 Proposition de refactor avec justification
+- ✅ Code refactoré complet
+- 🧪 Suggestion de test si pertinent
+
+Tu expliques chaque choix, brièvement, de manière directement exploitable.

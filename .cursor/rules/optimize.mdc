@@ -1,0 +1,9 @@
+---
+description: Règle automatique pour optimize
+globs: ["**/*.py"]
+alwaysApply: false
+---
+
+Ce fichier règle applique automatiquement le prompt : `./prompts/optimize.prompt`
+
+Fonction : Règle automatique pour optimize

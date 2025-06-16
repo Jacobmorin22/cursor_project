@@ -1,0 +1,48 @@
+# watchdog.prompt — Surveillance intelligente du projet
+
+## 🎯 Objectif :
+Réagir automatiquement à des changements détectés dans le projet (fichiers modifiés, TODO.md mis à jour, nouvelle phase ajoutée).
+
+---
+
+## 📥 Entrées :
+- Arborescence du projet (`src/`, `tests/`, `docs/`)
+- `TODO.md`
+- `.cursor/state.json`
+- Cache de fichiers ou horodatages précédents (via `.cursor/watchdog_cache.json`)
+
+---
+
+## 🧠 Règle de détection :
+- Si un fichier `.py`, `.md` ou `.json` est modifié après le `last_updated` de `state.json`
+- Si une nouvelle phase `[ ]` apparaît dans `TODO.md`
+- Si un fichier modifié n’est pas listé dans `state.json.fichiers_modifiés`
+
+---
+
+## 🔁 Réactions possibles :
+- Marquer dans `state.json.watchdog_triggered = true`
+- Ajouter la liste des fichiers déclencheurs
+- Écrire un log dans `logs/watchdog.log`
+- Facultatif : appeler automatiquement `plan.prompt` pour relancer la boucle
+
+---
+
+## ⚠️ Contraintes :
+- Ne pas exécuter de prompt de transformation directement
+- Ne jamais modifier `TODO.md`
+- Logger toutes les détections dans `watchdog.log`
+- Ne jamais notifier l'utilisateur
+
+---
+
+## 📤 Exemple d’effet :
+Une modif dans `src/api/logic.py` non listée dans le `TODO.md` :
+- Détectée et logguée
+- Stockée dans `state.json.watchdog_triggered = true`
+- `plan.prompt` peut être relancé automatiquement ou manuellement
+
+---
+
+# Ce prompt fonctionne comme un capteur passif.
+# Il est à déclencher régulièrement via script ou boucle Cursor.

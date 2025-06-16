@@ -1,0 +1,11 @@
+{
+  "Initialisation du projet": "onboarding.prompt",
+  "Génération structure": "onboarding.prompt",
+  "Analyse de la structure": "analyze.prompt",
+  "Refactorisation du code": "refactor.prompt",
+  "Génération des tests": "testgen.prompt",
+  "Génération de la documentation": "docgen.prompt",
+  "Optimisation finale": "optimize.prompt",
+  "Nettoyage": "cleanup.prompt",
+  "Rapport final": "report.prompt"
+}
